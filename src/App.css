@@ -1,0 +1,76 @@
+.App {
+  text-align: center;
+  background-color: hsl(0, 0%, 90%);
+  min-height: calc(100vh - 40px);
+  padding: 20px;
+}
+
+.header {
+  margin: 0;
+  padding: 10px;
+  color: hsl(0, 0%, 28%);
+  font-size: 1.4rem;
+}
+
+.won {
+  padding: 5px;
+  color: purple;
+  font-size: 1.6rem;
+}
+
+.over {
+  padding: 5px;
+  color: red;
+  font-size: 1.6rem;
+}
+
+.game-board {
+	width: 500px;
+	height: 500px;
+	margin: 0 auto;
+  background-color: #34495e;
+  color: #fff;
+  border: 6px solid #2c3e50;
+  border-radius: 10px;
+	
+	display: grid;
+	grid-template: repeat(4, 1fr) / repeat(4, 1fr);
+}
+
+.game-board div {
+  border: 6px solid #2c3e50;
+  border-radius: 2px;
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-row h2, button {
+  margin: 10px;
+}
+
+.flex-row button {
+    background-color: hsl(0, 0%, 21%)	; 
+    border: none;
+    color: white;
+    padding: 12px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.flex-row button:hover {
+  background-color: hsl(0, 0%, 29%)
+  ;
+}
